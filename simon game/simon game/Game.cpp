@@ -20,7 +20,8 @@ Game::Game() :
 	m_window{ sf::VideoMode{ 800U, 600U, 32U }, "SFML Game" },
 	m_exitGame{false} //when true game will exit
 {
-	setupFontAndText(); // load font 
+	setupFontAndText(); // load font
+	setupButtons(); 
 
 }
 
@@ -111,7 +112,20 @@ void Game::update(sf::Time t_deltaTime)
 void Game::render()
 {
 	m_window.clear(sf::Color::White);
+	m_window.draw(m_buttonBlue);
 	m_window.display();
+	
+}
+
+void Game::setupButtons()
+{
+	m_buttonBlue.setSize(sf::Vector2f(200.0f, 200.0f));
+	m_buttonBlue.setFillColor(BLUE);
+	m_buttonBlue.setPosition(sf::Vector2f(570.0f, 30.0f));
+
+	m_buttonGreen.setSize(sf::Vector2f(200.0f, 200.0f));
+	m_buttonGreen.setFillColor(GREEN);
+	m_buttonGreen.setPosition(sf::Vector2f(350.0f, 250.0f));
 }
 
 /// <summary>
