@@ -117,6 +117,10 @@ void Game::render()
 	m_window.draw(m_buttonRed);
 	m_window.draw(m_buttonYellow);
 	m_window.draw(m_simonText);
+	m_window.draw(m_easyText);
+	m_window.draw(m_mediumText);
+	m_window.draw(m_hardText);
+	m_window.draw(m_exitText);
 	m_window.display();
 	
 }
@@ -155,6 +159,31 @@ void Game::setupFontAndText()
 	m_simonText.setCharacterSize(50);
 	m_simonText.setPosition(50, 30);
 	m_simonText.setString("SIMON");
+
+	m_easyText.setFont(m_ArialBlackfont);
+	m_easyText.setFillColor(GREEN);
+	m_easyText.setCharacterSize(20);
+	m_easyText.setPosition(50, 100);
+	m_easyText.setString("PRESS GREEN FOR \n EASY MODE");
+
+	m_mediumText.setFont(m_ArialBlackfont);
+	m_mediumText.setFillColor(YELLOW);
+	m_mediumText.setCharacterSize(20);
+	m_mediumText.setPosition(50, 200);
+	m_mediumText.setString("PRESS YELLOW FOR \n MEDIUM MODE");
+
+	m_hardText.setFont(m_ArialBlackfont);
+	m_hardText.setFillColor(RED);
+	m_hardText.setCharacterSize(20);
+	m_hardText.setPosition(50, 300);
+	m_hardText.setString("PRESS RED FOR \n HARD MODE");
+
+	m_exitText.setFont(m_ArialBlackfont);
+	m_exitText.setFillColor(BLUE);
+	m_exitText.setCharacterSize(20);
+	m_exitText.setPosition(50, 400);
+	m_exitText.setString("PRESS BLUE TO \n EXIT GAME");
+
 }
 
 

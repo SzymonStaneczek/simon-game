@@ -16,6 +16,7 @@ const::sf::Color GREEN{ 0,180,0,225 };
 const::sf::Color BLUE{ 0,0,180,225 };
 const::sf::Color YELLOW{ 180,180,0,225 };
 
+
 class Game
 {
 public:
@@ -45,6 +46,10 @@ private:
 
 
 	sf::Text m_simonText;
+	sf::Text m_easyText;
+	sf::Text m_mediumText;
+	sf::Text m_hardText;
+	sf::Text m_exitText;
 	sf::RenderWindow m_window; // main SFML window
 	sf::Font m_ArialBlackfont; // font used by message
 	bool m_exitGame; // control exiting game
