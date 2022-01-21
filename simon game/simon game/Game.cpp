@@ -111,8 +111,11 @@ void Game::update(sf::Time t_deltaTime)
 /// </summary>
 void Game::render()
 {
-	m_window.clear(sf::Color::White);
+	m_window.clear(sf::Color::Black);
 	m_window.draw(m_buttonBlue);
+	m_window.draw(m_buttonGreen);
+	m_window.draw(m_buttonRed);
+	m_window.draw(m_buttonYellow);
 	m_window.display();
 	
 }
@@ -126,6 +129,14 @@ void Game::setupButtons()
 	m_buttonGreen.setSize(sf::Vector2f(200.0f, 200.0f));
 	m_buttonGreen.setFillColor(GREEN);
 	m_buttonGreen.setPosition(sf::Vector2f(350.0f, 250.0f));
+
+	m_buttonRed.setSize(sf::Vector2f(200.0f, 200.0f));
+	m_buttonRed.setFillColor(RED);
+	m_buttonRed.setPosition(sf::Vector2f(350.0f, 30.0f));
+
+	m_buttonYellow.setSize(sf::Vector2f(200.0f, 200.f));
+	m_buttonYellow.setFillColor(YELLOW);
+	m_buttonYellow.setPosition(sf::Vector2f(570.0f, 250.0f));
 }
 
 /// <summary>
