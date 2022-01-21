@@ -116,6 +116,7 @@ void Game::render()
 	m_window.draw(m_buttonGreen);
 	m_window.draw(m_buttonRed);
 	m_window.draw(m_buttonYellow);
+	m_window.draw(m_simonText);
 	m_window.display();
 	
 }
@@ -149,6 +150,11 @@ void Game::setupFontAndText()
 		std::cout << "problem loading arial black font" << std::endl;
 	}
 
+	m_simonText.setFont(m_ArialBlackfont);
+	m_simonText.setFillColor(RED);
+	m_simonText.setCharacterSize(50);
+	m_simonText.setPosition(50, 30);
+	m_simonText.setString("SIMON");
 }
 
 

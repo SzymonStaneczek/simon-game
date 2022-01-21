@@ -44,7 +44,7 @@ private:
 
 
 
-
+	sf::Text m_simonText;
 	sf::RenderWindow m_window; // main SFML window
 	sf::Font m_ArialBlackfont; // font used by message
 	bool m_exitGame; // control exiting game
